@@ -1,4 +1,9 @@
-﻿using UnityEngine;
+﻿// C# script for a 3D kaleidoscope.
+// This class generates a ring of cubes that rotate and orient themselves toward the camera.
+// This script should be attached to an event system alongside CardboardHandler.cs
+// 2015 by David Tracy @ Rockwell Group Lab
+
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
