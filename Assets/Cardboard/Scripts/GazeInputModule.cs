@@ -31,7 +31,7 @@ using UnityEngine.EventSystems;
 // interfaces (EventTrigger will work nicely).  The objects must have colliders too.
 public class GazeInputModule : BaseInputModule {
   [Tooltip("Whether gaze input is active in VR Mode only (true), or all the time (false).")]
-  public bool vrModeOnly = false;
+  public bool vrModeOnly = true;
 
   [Tooltip("Optional object to place at raycast intersections as a 3D cursor. " +
            "Be sure it is on a layer that raycasts will ignore.")]

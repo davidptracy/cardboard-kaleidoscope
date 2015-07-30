@@ -10,7 +10,7 @@ PlayerSettings:
   targetResolution: 0
   accelerometerFrequency: 60
   companyName: RGLab
-  productName: Scope Test
+  productName: Radial Test
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_ShowUnitySplashScreen: 1
@@ -71,7 +71,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleIdentifier: com.RGLab.KaleidoscopeTest
+  bundleIdentifier: com.RGLab.RadialKaleidoscope
   bundleVersion: 1.0
   preloadedAssets: []
   metroEnableIndependentInputSource: 0

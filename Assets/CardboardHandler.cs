@@ -51,13 +51,13 @@ public class CardboardHandler : MonoBehaviour {
 		
 		if (trackRotation) {
 			cardboardRotation = Cardboard.SDK.HeadPose.Orientation;
-			if (target == null) {
-				transform.localRotation = cardboardRotation;
-//				print (cardboardRotation.GetType());
-			} else {
-				transform.rotation = cardboardRotation * target.rotation;
-//				print (cardboardRotation.GetType());
-			}
+//			if (target == null) {
+//				transform.localRotation = cardboardRotation;
+////				print (cardboardRotation.GetType());
+//			} else {
+//				transform.rotation = cardboardRotation * target.rotation;
+////				print (cardboardRotation.GetType());
+//			}
 		}
 		
 		if (trackPosition) {
