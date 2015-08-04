@@ -395,6 +395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theHolder: {fileID: 769013624}
+  icoScale: 5
 --- !u!4 &769013626
 Transform:
   m_ObjectHideFlags: 0

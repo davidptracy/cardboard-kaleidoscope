@@ -11,11 +11,15 @@ using System.Collections.Generic;
 public class IcoSphereCreator : MonoBehaviour {
 
 	public GameObject theHolder;
+	public float icoScale;
+	public int recLvl;
 
 	void Awake(){
 		GameObject isocahedron = new GameObject("Isocahedron");
 		MeshFilter meshFilter = (MeshFilter)isocahedron.AddComponent(typeof(MeshFilter));
-		meshFilter.mesh = IcoSphere.Create (theHolder);
+		meshFilter.mesh = IcoSphere.Create (theHolder, recLvl);
+		Renderer rend = isocahedron.AddComponent<MeshRenderer> ();
+		isocahedron.transform.localScale *= 10.0f;
 	}
 
 	private static class IcoSphere{
@@ -68,7 +72,7 @@ public class IcoSphereCreator : MonoBehaviour {
 			return i;
 		}
 		
-		public static Mesh Create(GameObject obj)
+		public static Mesh Create(GameObject obj, int recLvl)
 		{
 			MeshFilter filter = obj.AddComponent< MeshFilter >();
 			Mesh mesh = filter.mesh;
@@ -78,7 +82,7 @@ public class IcoSphereCreator : MonoBehaviour {
 			Dictionary<long, int> middlePointIndexCache = new Dictionary<long, int>();
 			int index = 0;
 			
-			int recursionLevel = 2;
+			int recursionLevel = recLvl;
 			float radius = 1f;
 			
 			// create 12 vertices of a icosahedron

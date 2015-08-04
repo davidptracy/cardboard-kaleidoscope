@@ -1,7 +1,7 @@
-﻿  Shader "Custom/BlueTint" {
+﻿  Shader "Custom/GreenTint" {
     Properties {
       _MainTex ("Texture", 2D) = "white" {}
-      _ColorTint ("Tint", Color) = (0.2, 0.2, 1.0, 1.0)
+      _ColorTint ("Tint", Color) = (0.8, 1.0, 0.8, 1.0)
     }
     SubShader {
       Tags { "RenderType" = "Opaque" }
